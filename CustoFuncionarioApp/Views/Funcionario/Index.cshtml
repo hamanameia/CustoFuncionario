@@ -1,0 +1,18 @@
+﻿@model CustoFuncionarioApp.Models.Funcionario;
+
+<form asp-action="Calcular" asp-controller="Funcionario">
+    <p>
+    <p>Salário</p>
+    <input asp-for="SalarioBase" />
+    </p>
+    <p>
+    <p>Desconto</p>
+    <input asp-for="Desconto" />
+    </p>
+    <p>
+    <p>Benefício</p>
+    <input asp-for="Beneficio" />
+    </p>
+    <button type="submit">Calcular</button>
+</form>
+<p>@ViewData["Custo"]</p>
